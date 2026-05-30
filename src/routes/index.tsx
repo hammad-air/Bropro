@@ -1,29 +1,38 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/sections/Hero";
+import { TrustedBy } from "@/components/sections/TrustedBy";
+import { Services } from "@/components/sections/Services";
+import { Portfolio } from "@/components/sections/Portfolio";
+import { CaseStudies } from "@/components/sections/CaseStudies";
+import { About } from "@/components/sections/About";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { CTA } from "@/components/sections/CTA";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Pixora — Designs That Make Brands Impossible to Ignore" },
+      { name: "description", content: "Pixora is a creative design agency crafting brand identity, social media design, UI, and marketing creatives that drive growth." },
+      { property: "og:title", content: "Pixora — Creative Design Agency" },
+      { property: "og:description", content: "Transforming ideas into visual impact. Branding, social, UI and marketing design." },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
-  component: Index,
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Hero />
+      <TrustedBy />
+      <Services />
+      <Portfolio compact />
+      <CaseStudies />
+      <About />
+      <Testimonials />
+      <CTA />
+    </>
   );
 }

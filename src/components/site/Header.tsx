@@ -33,9 +33,7 @@ export function Header() {
     >
       <div className="container-px mx-auto max-w-7xl flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="h-9 w-9 rounded-xl bg-gradient-primary shadow-glow grid place-items-center text-primary-foreground font-bold">
-            P
-          </div>
+<img src="src/assets/logo.png" alt="Pixora Logo" width="36" height="36" srcset="" />
           <span className="text-lg font-semibold tracking-tight">Pixora</span>
         </Link>
 

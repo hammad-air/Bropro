@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container-px mx-auto max-w-7xl py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <div className="h-10 w-10 rounded-xl bg-gradient-primary grid place-items-center font-bold">P</div>
+<img src="src/assets/logo.png" alt="Pixora Logo" width="36" height="36" srcset="" />
             <span className="text-xl font-semibold">Pixora</span>
           </div>
           <p className="mt-4 text-white/70 max-w-md">
